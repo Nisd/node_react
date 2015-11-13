@@ -14,7 +14,7 @@ class AppRoutes extends Component {
     render(){
         console.log(this.props.state);
         return (
-            <Router history = 'createBrowserHistory'>
+            <Router history = {createBrowserHistory()}>
                 <Route path = '/' component = {AppRoot}>
                     <Route path = '/about' component = {About} />
                     <Route path = '*' component = {NoMatch} />
